@@ -1,0 +1,37 @@
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.favorite-item {
+  margin: 20px; /* Add some margin between the items */
+}
+
+.favoriteIcon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  color: #fff; /* Default color */
+  stroke: gray; /* Change the color of the outline to gray */
+  fill: none; /* Ensure no fill color */
+  stroke-opacity: 0.5;
+  transition: stroke 0.3s ease; /* Smooth color transition */
+}
+
+.favoriteIcon.favorited {
+  color: red; /* Red color when favorited */
+}
+
+
+
+@media (max-width: 550px) {
+  .favorite-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 86%;
+
+  }
+}

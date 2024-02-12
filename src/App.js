@@ -8,6 +8,7 @@ import Trending from "./Pages/Trending/Trending";
 import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Search from "./Pages/Search/Search";
+import Favorite from "./Pages/Favorite/Favorite";
 
 function App() {
   return (
@@ -16,10 +17,12 @@ function App() {
       <div className="app">
         <Container>
           <Switch>
-            <Route path="/" component={Trending} exact />
+            <Route path="/trending" component={Trending} exact />
             <Route path="/movies" component={Movies} />
             <Route path="/series" component={Series} />
             <Route path="/search" component={Search} />
+            <Route path="/favorite" component={Favorite} />
+
           </Switch>
         </Container>
       </div>

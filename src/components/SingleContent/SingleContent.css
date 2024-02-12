@@ -1,3 +1,5 @@
+/* SingleContent.css */
+
 .media {
   display: flex;
   flex-direction: column;
@@ -39,3 +41,20 @@
   padding: 0 2px;
   padding-bottom: 3px;
 }
+
+.singleContent {
+  position: relative;
+}
+
+
+
+.media.removing {
+  opacity: 0; /* Hide the content smoothly when removing */
+  height: 0; /* Collapse the height */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  border: none; /* Remove border */
+  transition: opacity 0.3s ease, height 0.3s ease, padding 0.3s ease, margin 0.3s ease, border 0.3s ease; /* Smooth transitions */
+}
+
+
